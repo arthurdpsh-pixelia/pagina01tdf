@@ -36,18 +36,18 @@ function App() {
     <div className="min-h-screen font-sans text-gray-800">
       {/* Hero Section */}
       <section className="bg-[#d81b60] text-white py-12 px-4 flex flex-col items-center text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 max-w-2xl leading-tight mt-4">
+          Como criar <span className="text-[#ffeb3b]">produtos personalizados</span> que vendem em até 24 horas usando apenas uma impressora comum e um ferro de passar roupa
+        </h1>
+        <p className="text-lg md:text-xl mb-8 max-w-2xl">
+          Aprenda um método simples, validado, passo a passo, direto ao ponto de como lucrar vendendo produtos criados em casa.
+        </p>
         <img 
           src="https://images.unsplash.com/photo-1585241936939-072171f1122a?q=80&w=800&auto=format&fit=crop" 
           alt="Pessoa passando roupa" 
           className="w-full max-w-md rounded-lg shadow-lg mb-8 object-cover h-64"
           referrerPolicy="no-referrer"
         />
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 max-w-2xl leading-tight">
-          Como criar <span className="text-[#ffeb3b]">produtos personalizados</span> que vendem em até 24 horas usando apenas uma impressora comum e um ferro de passar roupa
-        </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl">
-          Aprenda um método simples, validado, passo a passo, direto ao ponto de como lucrar vendendo produtos criados em casa.
-        </p>
         
         <a href="#comprar" className="bg-[#25d366] hover:bg-[#20b858] text-white font-bold py-4 px-8 rounded-full text-xl w-full max-w-md transition-transform transform hover:scale-105 shadow-lg mb-8">
           QUERO COMEÇAR AGORA
