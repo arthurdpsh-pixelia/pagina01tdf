@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <!-- Workaround for tracking scripts in iframe environment -->
+    <script>
+      try {
+        if (window.fetch) {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return originalFetch; },
+            set: function(val) { originalFetch = val; }
+          });
+        }
+      } catch (e) {
+        console.error('Could not make fetch writable', e);
+      }
+    </script>
     <!-- UTMify Script -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -13,20 +29,6 @@
       defer
     ></script>
     <!-- End UTMify Script -->
-    <!-- Workaround for tracking scripts in iframe environment -->
-    <script>
-      try {
-        if (window.fetch) {
-          Object.defineProperty(window, 'fetch', {
-            configurable: true,
-            writable: true,
-            value: window.fetch
-          });
-        }
-      } catch (e) {
-        console.error('Could not make fetch writable', e);
-      }
-    </script>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
