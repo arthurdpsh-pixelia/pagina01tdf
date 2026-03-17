@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <!-- UTMify Script -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    <!-- End UTMify Script -->
+    <!-- Workaround for tracking scripts in iframe environment -->
+    <script>
+      try {
+        if (window.fetch) {
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            writable: true,
+            value: window.fetch
+          });
+        }
+      } catch (e) {
+        console.error('Could not make fetch writable', e);
+      }
+    </script>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -16,18 +39,8 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('set', 'autoConfig', false, '1432847271625128');
     fbq('init', '1432847271625128');
-    fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
-    <!-- UTMify Script -->
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
-    <!-- End UTMify Script -->
   </head>
   <body>
     <!-- Meta Pixel Code (noscript) -->
