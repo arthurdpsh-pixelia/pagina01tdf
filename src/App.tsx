@@ -339,9 +339,9 @@ function App() {
           <h3 className="text-6xl font-black mb-2">R$ 19,90</h3>
           <p className="text-lg mb-8 opacity-90">ou 2x de R$ 10,30 no cartão</p>
           
-          <button className="bg-[#25d366] hover:bg-[#20b858] text-white font-bold py-4 px-8 rounded-full text-xl w-full transition-transform transform hover:scale-105 shadow-lg mb-4">
+          <a href="#comprar" className="block text-center bg-[#25d366] hover:bg-[#20b858] text-white font-bold py-4 px-8 rounded-full text-xl w-full transition-transform transform hover:scale-105 shadow-lg mb-4">
             QUERO COMEÇAR AGORA
-          </button>
+          </a>
           <div className="flex justify-center space-x-2 text-sm opacity-80">
             <Lock className="w-4 h-4" />
             <span>Compra 100% Segura</span>
@@ -353,9 +353,9 @@ function App() {
       <section className="bg-[#3e2723] text-white py-16 px-4 flex flex-col items-center text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-2xl">Chega de deixar o ferro de passar encostado.</h2>
         <p className="text-xl mb-8 opacity-90">Faça ele ser a sua fonte de renda.</p>
-        <button className="bg-[#25d366] hover:bg-[#20b858] text-white font-bold py-4 px-8 rounded-full text-lg w-full max-w-md transition-transform transform hover:scale-105 shadow-lg">
+        <a href="#comprar" className="block text-center bg-[#25d366] hover:bg-[#20b858] text-white font-bold py-4 px-8 rounded-full text-lg w-full max-w-md transition-transform transform hover:scale-105 shadow-lg">
           QUERO COMEÇAR AGORA E LUCRAR COM O MEU FERRO
-        </button>
+        </a>
       </section>
 
       {/* FAQ Section */}

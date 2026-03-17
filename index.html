@@ -50,6 +50,27 @@
     <!-- End Meta Pixel Code (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Script para forçar repasse de parâmetros UTM/URL para os próximos links -->
+    <script>
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && link.href && window.location.search) {
+          var hrefAttr = link.getAttribute('href');
+          if (hrefAttr && hrefAttr.startsWith('#')) return;
+          
+          try {
+            var url = new URL(link.href);
+            var currentParams = new URLSearchParams(window.location.search);
+            currentParams.forEach(function(value, key) {
+              url.searchParams.set(key, value);
+            });
+            link.href = url.toString();
+          } catch (err) {
+            console.error('Erro ao repassar UTMs:', err);
+          }
+        }
+      });
+    </script>
   </body>
 </html>
 
