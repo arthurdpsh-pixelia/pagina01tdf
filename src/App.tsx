@@ -229,37 +229,6 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-white py-16 px-4 flex flex-col items-center">
-        <h2 className="text-4xl font-black mb-12 text-center text-gray-900">Depoimentos reais</h2>
-        <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-          {[
-            { name: 'Maria Silva', text: '"Fiz 10 peças no fim de semana. Vendi todas! O E-book me ajudou muito!"', initial: 'M' },
-            { name: 'Ana Souza', text: '"Nunca pensei que depois de ver um vídeo eu ia ter uma fonte de renda!"', initial: 'A' }
-          ].map((item, i) => (
-            <div key={i} className="bg-[#F3E8FF] text-gray-800 p-8 rounded-3xl shadow-sm border border-purple-100 relative">
-              <div className="absolute top-0 right-8 transform -translate-y-1/2">
-                <div className="bg-[#9966CC] text-white p-3 rounded-full shadow-lg">
-                  <Star className="w-6 h-6 fill-current" />
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-14 h-14 bg-[#4C1D95] text-white rounded-full flex items-center justify-center font-black text-2xl shadow-inner">
-                  {item.initial}
-                </div>
-                <div>
-                  <h4 className="font-bold text-xl">{item.name}</h4>
-                  <div className="flex text-[#ffeb3b] mt-1">
-                    {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-current" />)}
-                  </div>
-                </div>
-              </div>
-              <p className="italic text-lg text-gray-700 leading-relaxed">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Pricing Section */}
       <section id="comprar" className="bg-gray-50 py-20 px-4 flex flex-col items-center relative">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -367,6 +336,37 @@ function App() {
               <span>Compra 100% Segura e Criptografada</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-white py-16 px-4 flex flex-col items-center">
+        <h2 className="text-4xl font-black mb-12 text-center text-gray-900">Depoimentos reais</h2>
+        <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            { name: 'Maria Silva', text: '"Fiz 10 peças no fim de semana. Vendi todas! O E-book me ajudou muito!"', initial: 'M' },
+            { name: 'Ana Souza', text: '"Nunca pensei que depois de ver um vídeo eu ia ter uma fonte de renda!"', initial: 'A' }
+          ].map((item, i) => (
+            <div key={i} className="bg-[#F3E8FF] text-gray-800 p-8 rounded-3xl shadow-sm border border-purple-100 relative">
+              <div className="absolute top-0 right-8 transform -translate-y-1/2">
+                <div className="bg-[#9966CC] text-white p-3 rounded-full shadow-lg">
+                  <Star className="w-6 h-6 fill-current" />
+                </div>
+              </div>
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-14 h-14 bg-[#4C1D95] text-white rounded-full flex items-center justify-center font-black text-2xl shadow-inner">
+                  {item.initial}
+                </div>
+                <div>
+                  <h4 className="font-bold text-xl">{item.name}</h4>
+                  <div className="flex text-[#ffeb3b] mt-1">
+                    {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-current" />)}
+                  </div>
+                </div>
+              </div>
+              <p className="italic text-lg text-gray-700 leading-relaxed">{item.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
