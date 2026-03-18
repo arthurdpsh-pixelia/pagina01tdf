@@ -425,26 +425,26 @@ function App() {
       {/* Popup Modal */}
       {showPopup && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+          <div className="bg-white rounded-3xl max-w-lg w-full p-6 relative shadow-2xl max-h-[95vh] overflow-y-auto">
             <button 
               onClick={() => setShowPopup(false)}
-              className="absolute top-5 right-5 text-gray-400 hover:text-gray-800 bg-gray-100 rounded-full p-2 transition-colors"
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-800 bg-gray-100 rounded-full p-2 transition-colors"
             >
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5" />
             </button>
             
-            <div className="text-center mb-8 mt-4">
-              <div className="bg-red-100 text-red-600 font-black px-5 py-2 rounded-full inline-block mb-6 text-sm uppercase tracking-widest">
+            <div className="text-center mb-6 mt-2">
+              <div className="bg-red-100 text-red-600 font-black px-4 py-1.5 rounded-full inline-block mb-4 text-xs uppercase tracking-widest">
                 Espere! Oferta Única
               </div>
-              <h3 className="text-3xl font-black text-gray-900 mb-4 leading-tight">Leve o Pacote Premium com Desconto!</h3>
-              <p className="text-gray-600 text-lg mb-6">
-                Antes de finalizar, que tal levar todos os bônus exclusivos do Pacote Premium <span className="whitespace-nowrap">por apenas <span className="font-black text-[#25d366] text-2xl ml-1">R$ 17,90</span>?</span>
+              <h3 className="text-2xl font-black text-gray-900 mb-2 leading-tight">Leve o Pacote Premium com Desconto!</h3>
+              <p className="text-gray-600 text-base mb-4">
+                Antes de finalizar, que tal levar todos os bônus exclusivos do Pacote Premium <span className="whitespace-nowrap">por apenas <span className="font-black text-[#25d366] text-xl ml-1">R$ 17,90</span>?</span>
               </p>
               
-              <div className="bg-gray-50 rounded-2xl p-4 mb-6 text-left border border-gray-100 h-48 overflow-y-auto">
-                <p className="font-bold text-gray-800 mb-3 text-sm uppercase tracking-wider">O que você vai levar a mais:</p>
-                <ul className="space-y-2">
+              <div className="bg-gray-50 rounded-2xl p-4 mb-4 text-left border border-gray-100 h-32 overflow-y-auto">
+                <p className="font-bold text-gray-800 mb-2 text-xs uppercase tracking-wider">O que você vai levar a mais:</p>
+                <ul className="space-y-1.5">
                   {[
                     '🎨 250 Artes Prontas em Alta Resolução',
                     '💰 Guia de Precificação Estratégica',
@@ -457,7 +457,7 @@ function App() {
                     '💬 Scripts prontos para vender no WhatsApp',
                     '🏷️ Modelos de nomes e frases que vendem'
                   ].map((bonus, i) => (
-                    <li key={i} className="flex items-start space-x-2 text-sm">
+                    <li key={i} className="flex items-start space-x-2 text-xs">
                       <CheckCircle2 className="text-[#25d366] w-4 h-4 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 font-medium">{bonus}</span>
                     </li>
@@ -466,17 +466,17 @@ function App() {
               </div>
             </div>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               <a 
                 href="https://pay.lowify.com.br/go.php?offer=hc10iy4"
-                className="block text-center w-full py-5 rounded-2xl font-black text-xl bg-[#25d366] hover:bg-[#20b858] text-white shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-transform transform hover:scale-105"
+                className="block text-center w-full py-4 rounded-2xl font-black text-lg bg-[#25d366] hover:bg-[#20b858] text-white shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-transform transform hover:scale-105"
               >
                 SIM! QUERO O PREMIUM POR R$ 17,90
               </a>
               
               <a 
                 href="https://pay.lowify.com.br/checkout.php?product_id=j69gPp"
-                className="block text-center w-full py-4 rounded-2xl font-bold text-gray-500 hover:text-gray-800 hover:bg-gray-100 transition-colors"
+                className="block text-center w-full py-3 rounded-2xl font-bold text-sm text-gray-500 hover:text-gray-800 hover:bg-gray-100 transition-colors"
               >
                 Não, obrigado. Quero continuar com o plano básico.
               </a>
