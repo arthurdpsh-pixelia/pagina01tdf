@@ -344,8 +344,8 @@ function App() {
         <h2 className="text-4xl font-black mb-12 text-center text-gray-900">Depoimentos reais</h2>
         <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
-            { name: 'Maria Silva', text: '"Fiz 10 peças no fim de semana. Vendi todas! O E-book me ajudou muito!"', initial: 'M' },
-            { name: 'Ana Souza', text: '"Nunca pensei que depois de ver um vídeo eu ia ter uma fonte de renda!"', initial: 'A' }
+            { name: 'Maria Silva', text: '"Fiz 10 peças no fim de semana. Vendi todas! O E-book me ajudou muito!"', initial: 'M', image: 'https://i.ibb.co/27TBzpnz/Design-sem-nome-12.webp' },
+            { name: 'Ana Souza', text: '"Nunca pensei que depois de ver um vídeo eu ia ter uma fonte de renda!"', initial: 'A', image: 'https://i.ibb.co/BKykJv2N/mulher-negra-carol-figueiredo-cabelo-natural-20231127160756-1.webp' }
           ].map((item, i) => (
             <div key={i} className="bg-[#F3E8FF] text-gray-800 p-8 rounded-3xl shadow-sm border border-purple-100 relative">
               <div className="absolute top-0 right-8 transform -translate-y-1/2">
@@ -354,9 +354,13 @@ function App() {
                 </div>
               </div>
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-14 h-14 bg-[#4C1D95] text-white rounded-full flex items-center justify-center font-black text-2xl shadow-inner">
-                  {item.initial}
-                </div>
+                {item.image ? (
+                  <img src={item.image} alt={item.name} className="w-14 h-14 rounded-full object-cover shadow-inner border-2 border-[#4C1D95]" referrerPolicy="no-referrer" />
+                ) : (
+                  <div className="w-14 h-14 bg-[#4C1D95] text-white rounded-full flex items-center justify-center font-black text-2xl shadow-inner">
+                    {item.initial}
+                  </div>
+                )}
                 <div>
                   <h4 className="font-bold text-xl">{item.name}</h4>
                   <div className="flex text-[#ffeb3b] mt-1">
