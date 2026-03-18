@@ -162,7 +162,7 @@ function App() {
       {/* What you will learn Section */}
       <section className="bg-gray-50 py-16 px-4 flex flex-col items-center">
         <h2 className="text-4xl font-black mb-12 text-center text-gray-900 max-w-3xl leading-tight">
-          O que você leva com o E-Book <br/><span className="text-[#9966CC]">"Do Zero ao Lucro com Ferro de Passar"</span>
+          O que você leva com o guia da Maiara <br/><span className="text-[#9966CC]">"Do Zero ao Lucro com Ferro de Passar"</span>
         </h2>
         
         <div className="max-w-5xl w-full flex flex-col lg:flex-row gap-12 items-center mb-12">
