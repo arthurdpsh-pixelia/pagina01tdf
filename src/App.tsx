@@ -28,17 +28,17 @@ function App() {
         <h1 className="text-4xl md:text-5xl font-black mb-6 max-w-3xl leading-tight mt-4 relative z-10 drop-shadow-md">
           De zero a suas primeiras vendas em 48 horas criando <span className="text-[#ffeb3b]">produtos personalizados</span> dentro de casa
         </h1>
-        
-        <img 
-          src="https://i.ibb.co/wNFSkhyt/image.jpg" 
-          alt="Destaque" 
-          className="w-full max-w-2xl mb-8 relative z-10 object-contain"
-          referrerPolicy="no-referrer"
-        />
 
         <p className="text-xl md:text-2xl mb-10 max-w-2xl relative z-10 font-medium text-purple-100">
           Sem experiência, sem investimento alto e sem depender de ninguém
         </p>
+        
+        <img 
+          src="https://i.ibb.co/wNFSkhyt/image.jpg" 
+          alt="Destaque" 
+          className="w-full max-w-2xl mb-8 relative z-10 object-contain bg-transparent"
+          referrerPolicy="no-referrer"
+        />
         
         <a href="#comprar" className="relative z-10 bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-2xl w-full max-w-md transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)] mb-10 flex items-center justify-center whitespace-nowrap">
           👉 COMEÇAR AGORA
@@ -219,7 +219,7 @@ function App() {
                 key={i}
                 src={src} 
                 alt={`Produto personalizado ${i + 1}`} 
-                className="w-64 h-64 rounded-2xl shadow-xl object-cover border-4 border-gray-100 flex-shrink-0"
+                className="w-64 h-96 rounded-2xl shadow-xl object-cover border-4 border-gray-100 flex-shrink-0"
                 referrerPolicy="no-referrer"
               />
             ))}
