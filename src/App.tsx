@@ -34,7 +34,7 @@ function App() {
         </p>
         
         <img 
-          src="https://i.ibb.co/wNFSkhyt/image.jpg" 
+          src="https://i.ibb.co/39BNDWGZ/image.png" 
           alt="Destaque" 
           className="w-full max-w-2xl mb-8 relative z-10 object-contain bg-transparent"
           referrerPolicy="no-referrer"
@@ -167,7 +167,7 @@ function App() {
           <div className="flex-1 w-full relative">
             <div className="absolute -inset-2 bg-gradient-to-tr from-[#9966CC] to-[#F3E8FF] rounded-3xl blur-lg opacity-50"></div>
             <img 
-              src="https://i.ibb.co/JjyZSv2t/image.jpg" 
+              src="https://i.ibb.co/HLLyB4dN/image.png" 
               alt="Detalhe passando roupa" 
               className="w-full rounded-2xl shadow-2xl object-cover h-80 relative z-10 border border-white"
               referrerPolicy="no-referrer"
@@ -204,22 +204,22 @@ function App() {
         <div className="w-full relative overflow-hidden p-2">
           <div className="relative z-10 flex space-x-4 animate-marquee w-max">
             {[
-              'https://i.ibb.co/ccX7Mq6j/image.jpg',
-              'https://i.ibb.co/xtHY9hpJ/image.jpg',
-              'https://i.ibb.co/GbXLgDJ/image.jpg',
-              'https://i.ibb.co/39Rf8mQD/image.jpg',
-              'https://i.ibb.co/Kx05Tsrb/image.jpg',
-              'https://i.ibb.co/ccX7Mq6j/image.jpg',
-              'https://i.ibb.co/xtHY9hpJ/image.jpg',
-              'https://i.ibb.co/GbXLgDJ/image.jpg',
-              'https://i.ibb.co/39Rf8mQD/image.jpg',
-              'https://i.ibb.co/Kx05Tsrb/image.jpg'
+              'https://i.ibb.co/9JPdZcY/image.png',
+              'https://i.ibb.co/jvXp97R8/image.png',
+              'https://i.ibb.co/ccPrhqR3/image.png',
+              'https://i.ibb.co/xtnZ9Vp3/image.png',
+              'https://i.ibb.co/xqHk3JCf/image.png',
+              'https://i.ibb.co/9JPdZcY/image.png',
+              'https://i.ibb.co/jvXp97R8/image.png',
+              'https://i.ibb.co/ccPrhqR3/image.png',
+              'https://i.ibb.co/xtnZ9Vp3/image.png',
+              'https://i.ibb.co/xqHk3JCf/image.png'
             ].map((src, i) => (
               <img 
                 key={i}
                 src={src} 
                 alt={`Produto personalizado ${i + 1}`} 
-                className="w-64 h-96 rounded-2xl shadow-xl object-cover border-4 border-gray-100 flex-shrink-0"
+                className="w-64 h-64 rounded-2xl shadow-xl object-cover border-4 border-gray-100 flex-shrink-0"
                 referrerPolicy="no-referrer"
               />
             ))}
