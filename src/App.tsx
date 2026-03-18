@@ -35,7 +35,7 @@ function App() {
         
         <div className="relative w-full max-w-2xl mb-6 z-10">
           <img 
-            src="https://i.ibb.co/p6KLfFk7/Design-sem-nome-11.webp" 
+            src="https://i.ibb.co/mVb7K91t/49131871-4690-4c3c-9ebd-611a1132cf2a-removebg-preview.png" 
             alt="Destaque" 
             className="relative w-full object-contain"
             referrerPolicy="no-referrer"
