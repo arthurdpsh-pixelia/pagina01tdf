@@ -26,28 +26,26 @@ function App() {
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
         
         <h1 className="text-4xl md:text-5xl font-black mb-6 max-w-3xl leading-tight mt-4 relative z-10 drop-shadow-md">
-          Como criar <span className="text-[#ffeb3b]">produtos personalizados</span> que vendem em até 24 horas usando apenas uma impressora comum e um ferro de passar roupa
+          De zero a suas primeiras vendas em 48 horas criando <span className="text-[#ffeb3b]">produtos personalizados</span> dentro de casa
         </h1>
+        
+        <img 
+          src="https://i.ibb.co/wNFSkhyt/image.jpg" 
+          alt="Destaque" 
+          className="w-full max-w-2xl mb-8 relative z-10 object-contain"
+          referrerPolicy="no-referrer"
+        />
+
         <p className="text-xl md:text-2xl mb-10 max-w-2xl relative z-10 font-medium text-purple-100">
-          Aprenda um método simples, validado, passo a passo, direto ao ponto de como lucrar vendendo produtos criados em casa.
+          Sem experiência, sem investimento alto e sem depender de ninguém
         </p>
         
-        <div className="relative z-10 w-full max-w-2xl mb-10">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#ffeb3b] to-[#25d366] rounded-2xl blur opacity-30"></div>
-          <img 
-            src="https://images.unsplash.com/photo-1585241936939-072171f1122a?q=80&w=1200&auto=format&fit=crop" 
-            alt="Pessoa passando roupa" 
-            className="w-full rounded-xl shadow-2xl object-cover h-80 md:h-96 relative border-4 border-white/10"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-        
-        <a href="#comprar" className="relative z-10 bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-2xl w-full max-w-md transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)] mb-10">
-          QUERO COMEÇAR AGORA
+        <a href="#comprar" className="relative z-10 bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-2xl w-full max-w-md transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)] mb-10 flex items-center justify-center whitespace-nowrap">
+          👉 COMEÇAR AGORA
         </a>
 
         <ul className="relative z-10 text-left space-y-4 max-w-md w-full bg-black/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-          {['Sem precisar de impressora especial', 'Sem depender de gráfica', 'Sem investir pesado', 'Sem experiência anterior'].map((item, i) => (
+          {['Liberdade para trabalhar de casa', 'Renda extra (ou principal)', 'Processo fácil de aplicar', 'Ideal para iniciantes'].map((item, i) => (
             <li key={i} className="flex items-center space-x-3">
               <CheckCircle2 className="text-[#ffeb3b] w-6 h-6 flex-shrink-0" />
               <span className="font-medium text-lg">{item}</span>
@@ -110,9 +108,8 @@ function App() {
         <div className="bg-[#F3E8FF] rounded-3xl p-8 max-w-3xl w-full border border-purple-100 shadow-inner">
           <h3 className="text-2xl font-bold mb-8 text-center text-[#4C1D95]">Veja as vantagens e características:</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {['Fácil de fazer', 'Alta lucratividade', 'Prático', 'Em casa'].map((item, i) => (
-              <div key={i} className="flex items-center space-x-2 bg-white px-6 py-3 rounded-full shadow-sm border border-purple-50">
-                <CheckCircle2 className="text-[#25d366] w-5 h-5 flex-shrink-0" />
+            {['🧩 Fácil de fazer', '💰 Alta lucratividade', '⚡ Prático', '🏠 Em casa'].map((item, i) => (
+              <div key={i} className="flex items-center justify-center bg-white px-6 py-3 rounded-full shadow-sm border border-purple-50 text-center">
                 <span className="font-bold text-gray-800">{item}</span>
               </div>
             ))}
@@ -155,7 +152,7 @@ function App() {
         <div className="max-w-2xl w-full border-l-4 border-[#9966CC] bg-purple-50 rounded-r-2xl p-6 shadow-sm">
           <p className="text-[#4C1D95] font-bold text-lg flex items-center">
             <span className="text-2xl mr-2">⚠️</span>
-            Se você acha que vai ficar rico apenas "copiando", já pode sair daqui. Este é um método de trabalho real.
+            Se você sabe ligar um ferro e apertar “imprimir”, já pode começar.
           </p>
         </div>
       </section>
@@ -170,7 +167,7 @@ function App() {
           <div className="flex-1 w-full relative">
             <div className="absolute -inset-2 bg-gradient-to-tr from-[#9966CC] to-[#F3E8FF] rounded-3xl blur-lg opacity-50"></div>
             <img 
-              src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop" 
+              src="https://i.ibb.co/JjyZSv2t/image.jpg" 
               alt="Detalhe passando roupa" 
               className="w-full rounded-2xl shadow-2xl object-cover h-80 relative z-10 border border-white"
               referrerPolicy="no-referrer"
@@ -196,9 +193,38 @@ function App() {
           </div>
         </div>
 
-        <a href="#comprar" className="bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-xl w-full max-w-md text-center transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.3)]">
+        <a href="#comprar" className="bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-xl w-full max-w-md text-center transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.3)] flex items-center justify-center whitespace-nowrap">
           QUERO COMEÇAR AGORA
         </a>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="bg-white py-16 overflow-hidden flex flex-col items-center border-b border-gray-100">
+        <h2 className="text-3xl md:text-4xl font-black mb-10 text-center text-gray-900 px-4">Produtos que você pode começar a fazer hoje</h2>
+        <div className="w-full relative overflow-hidden p-2">
+          <div className="relative z-10 flex space-x-4 animate-marquee w-max">
+            {[
+              'https://i.ibb.co/ccX7Mq6j/image.jpg',
+              'https://i.ibb.co/xtHY9hpJ/image.jpg',
+              'https://i.ibb.co/GbXLgDJ/image.jpg',
+              'https://i.ibb.co/39Rf8mQD/image.jpg',
+              'https://i.ibb.co/Kx05Tsrb/image.jpg',
+              'https://i.ibb.co/ccX7Mq6j/image.jpg',
+              'https://i.ibb.co/xtHY9hpJ/image.jpg',
+              'https://i.ibb.co/GbXLgDJ/image.jpg',
+              'https://i.ibb.co/39Rf8mQD/image.jpg',
+              'https://i.ibb.co/Kx05Tsrb/image.jpg'
+            ].map((src, i) => (
+              <img 
+                key={i}
+                src={src} 
+                alt={`Produto personalizado ${i + 1}`} 
+                className="w-64 h-64 rounded-2xl shadow-xl object-cover border-4 border-gray-100 flex-shrink-0"
+                referrerPolicy="no-referrer"
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Testimonials */}
@@ -276,39 +302,63 @@ function App() {
             <h3 className="text-3xl font-black mb-2 mt-4 text-white">Pacote Premium</h3>
             <p className="text-purple-200 mb-8 text-lg">Tudo do básico + Bônus Exclusivos</p>
             <div className="mb-8">
-              <span className="text-6xl font-black text-white">R$ 29<span className="text-3xl">,90</span></span>
+              <span className="text-6xl font-black text-[#25d366]">R$ 29<span className="text-3xl">,90</span></span>
             </div>
-            <ul className="space-y-5 mb-10 flex-1">
-              <li className="flex items-start space-x-4">
-                <CheckCircle2 className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-medium text-lg">E-Book Completo</span>
+            <ul className="space-y-3 mb-10 flex-1">
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-medium text-base">E-Book Completo</span>
               </li>
-              <li className="flex items-start space-x-4">
-                <CheckCircle2 className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-medium text-lg">Acesso Vitalício</span>
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-medium text-base">Acesso Vitalício</span>
               </li>
-              <li className="flex items-start space-x-4 bg-white/10 p-3 rounded-xl">
-                <Gift className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-bold text-lg text-[#ffeb3b]">10 Artes Prontas em Alta Resolução</span>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">🎨 250 Artes Prontas em Alta Resolução (é só imprimir e vender)</span>
               </li>
-              <li className="flex items-start space-x-4 bg-white/10 p-3 rounded-xl">
-                <Gift className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-bold text-lg text-[#ffeb3b]">Guia de Precificação</span>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">💰 Guia de Precificação Estratégica</span>
               </li>
-              <li className="flex items-start space-x-4 bg-white/10 p-3 rounded-xl">
-                <Gift className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-bold text-lg text-[#ffeb3b]">Planilha de Controle</span>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">📊 Planilha de Controle de Vendas</span>
               </li>
-              <li className="flex items-start space-x-4 bg-white/10 p-3 rounded-xl">
-                <Gift className="text-[#ffeb3b] w-6 h-6 flex-shrink-0 mt-0.5" />
-                <span className="font-bold text-lg text-[#ffeb3b]">Lista Secreta de Fornecedores</span>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">🔎 Lista de Fornecedores Baratos</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">📦 Lista de Produtos Mais Vendidos</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">🧠 Ideias de Personalizados Lucrativos</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">🎯 Guia de Primeiras Vendas em 48h</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">📲 Modelos de Posts para Divulgação</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">💬 Scripts prontos para vender no WhatsApp</span>
+              </li>
+              <li className="flex items-start space-x-3 bg-white/10 p-2 rounded-lg">
+                <Gift className="text-[#ffeb3b] w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-sm text-[#ffeb3b]">🏷️ Modelos de nomes e frases que vendem</span>
               </li>
             </ul>
             <a 
               href="https://pay.lowify.com.br/go.php?offer=fkphscr"
-              className="block text-center w-full py-5 rounded-full font-black text-xl bg-[#25d366] hover:bg-[#20b858] text-white transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)]"
+              className="flex items-center justify-center w-full py-5 rounded-full font-black text-xl bg-[#25d366] hover:bg-[#20b858] text-white transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)] whitespace-nowrap"
             >
-              COMPRAR PACOTE PREMIUM
+              PACOTE PREMIUM
             </a>
             <div className="flex justify-center space-x-2 text-sm opacity-80 mt-6">
               <Lock className="w-5 h-5" />
@@ -382,9 +432,32 @@ function App() {
                 Espere! Oferta Única
               </div>
               <h3 className="text-3xl font-black text-gray-900 mb-4 leading-tight">Leve o Pacote Premium com Desconto!</h3>
-              <p className="text-gray-600 text-lg">
-                Antes de finalizar, que tal levar todos os bônus exclusivos do Pacote Premium por apenas <span className="font-black text-[#9966CC] text-2xl ml-1">R$ 17,90</span>?
+              <p className="text-gray-600 text-lg mb-6">
+                Antes de finalizar, que tal levar todos os bônus exclusivos do Pacote Premium <span className="whitespace-nowrap">por apenas <span className="font-black text-[#25d366] text-2xl ml-1">R$ 17,90</span>?</span>
               </p>
+              
+              <div className="bg-gray-50 rounded-2xl p-4 mb-6 text-left border border-gray-100 h-48 overflow-y-auto">
+                <p className="font-bold text-gray-800 mb-3 text-sm uppercase tracking-wider">O que você vai levar a mais:</p>
+                <ul className="space-y-2">
+                  {[
+                    '🎨 250 Artes Prontas em Alta Resolução',
+                    '💰 Guia de Precificação Estratégica',
+                    '📊 Planilha de Controle de Vendas',
+                    '🔎 Lista de Fornecedores Baratos',
+                    '📦 Lista de Produtos Mais Vendidos',
+                    '🧠 Ideias de Personalizados Lucrativos',
+                    '🎯 Guia de Primeiras Vendas em 48h',
+                    '📲 Modelos de Posts para Divulgação',
+                    '💬 Scripts prontos para vender no WhatsApp',
+                    '🏷️ Modelos de nomes e frases que vendem'
+                  ].map((bonus, i) => (
+                    <li key={i} className="flex items-start space-x-2 text-sm">
+                      <CheckCircle2 className="text-[#25d366] w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700 font-medium">{bonus}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
             
             <div className="space-y-4">
