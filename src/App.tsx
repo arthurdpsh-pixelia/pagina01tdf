@@ -29,16 +29,18 @@ function App() {
           De zero a suas primeiras vendas em 48 horas criando <span className="text-[#ffeb3b]">produtos personalizados</span> dentro de casa
         </h1>
 
-        <p className="text-xl md:text-2xl mb-10 max-w-2xl relative z-10 font-medium text-purple-100">
+        <p className="text-xl md:text-2xl mb-4 max-w-2xl relative z-10 font-medium text-purple-100">
           Sem experiência, sem investimento alto e sem depender de ninguém
         </p>
         
-        <img 
-          src="https://i.ibb.co/39BNDWGZ/image.png" 
-          alt="Destaque" 
-          className="w-full max-w-2xl mb-8 relative z-10 object-contain bg-transparent"
-          referrerPolicy="no-referrer"
-        />
+        <div className="relative w-full max-w-2xl mb-6 z-10">
+          <img 
+            src="https://i.ibb.co/p6KLfFk7/Design-sem-nome-11.webp" 
+            alt="Destaque" 
+            className="relative w-full object-contain"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         
         <a href="#comprar" className="relative z-10 bg-[#25d366] hover:bg-[#20b858] text-white font-black py-5 px-10 rounded-full text-2xl w-full max-w-md transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,211,102,0.4)] mb-10 flex items-center justify-center whitespace-nowrap">
           👉 COMEÇAR AGORA
@@ -48,7 +50,7 @@ function App() {
           {['Liberdade para trabalhar de casa', 'Renda extra (ou principal)', 'Processo fácil de aplicar', 'Ideal para iniciantes'].map((item, i) => (
             <li key={i} className="flex items-center space-x-3">
               <CheckCircle2 className="text-[#ffeb3b] w-6 h-6 flex-shrink-0" />
-              <span className="font-medium text-lg">{item}</span>
+              <span className="font-medium text-lg text-white">{item}</span>
             </li>
           ))}
         </ul>
@@ -167,7 +169,7 @@ function App() {
           <div className="flex-1 w-full relative">
             <div className="absolute -inset-2 bg-gradient-to-tr from-[#9966CC] to-[#F3E8FF] rounded-3xl blur-lg opacity-50"></div>
             <img 
-              src="https://i.ibb.co/HLLyB4dN/image.png" 
+              src="https://i.ibb.co/j99YbfRV/Design-sem-nome-10.webp" 
               alt="Detalhe passando roupa" 
               className="w-full rounded-2xl shadow-2xl object-cover h-80 relative z-10 border border-white"
               referrerPolicy="no-referrer"
@@ -204,16 +206,16 @@ function App() {
         <div className="w-full relative overflow-hidden p-2">
           <div className="relative z-10 flex space-x-4 animate-marquee w-max">
             {[
-              'https://i.ibb.co/9JPdZcY/image.png',
-              'https://i.ibb.co/jvXp97R8/image.png',
-              'https://i.ibb.co/ccPrhqR3/image.png',
-              'https://i.ibb.co/xtnZ9Vp3/image.png',
-              'https://i.ibb.co/xqHk3JCf/image.png',
-              'https://i.ibb.co/9JPdZcY/image.png',
-              'https://i.ibb.co/jvXp97R8/image.png',
-              'https://i.ibb.co/ccPrhqR3/image.png',
-              'https://i.ibb.co/xtnZ9Vp3/image.png',
-              'https://i.ibb.co/xqHk3JCf/image.png'
+              'https://i.ibb.co/nTpKP6k/Design-sem-nome-5.webp',
+              'https://i.ibb.co/6RCdc6By/Design-sem-nome-6.webp',
+              'https://i.ibb.co/C5qHKL48/Design-sem-nome-7.webp',
+              'https://i.ibb.co/LXTKj4Lv/Design-sem-nome-8.webp',
+              'https://i.ibb.co/3mz3kBrM/Design-sem-nome-9.webp',
+              'https://i.ibb.co/nTpKP6k/Design-sem-nome-5.webp',
+              'https://i.ibb.co/6RCdc6By/Design-sem-nome-6.webp',
+              'https://i.ibb.co/C5qHKL48/Design-sem-nome-7.webp',
+              'https://i.ibb.co/LXTKj4Lv/Design-sem-nome-8.webp',
+              'https://i.ibb.co/3mz3kBrM/Design-sem-nome-9.webp'
             ].map((src, i) => (
               <img 
                 key={i}
